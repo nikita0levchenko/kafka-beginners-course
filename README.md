@@ -1,4 +1,4 @@
-# kafka-beginners-course
+# kafka-course
 ## setup your docker container with kafka cluster
 ```
 curl -L https://releases.conduktor.io/quick-start -o docker-compose.yml && docker compose up -d --wait && echo "Conduktor started on http://localhost:8080"
