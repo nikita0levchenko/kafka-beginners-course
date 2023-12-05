@@ -16,3 +16,7 @@ lazy val commonSettings = Seq(
 lazy val kafkaBasics = (project in file("kafka-basics")).settings(
   commonSettings
 )
+
+lazy val kafkaProducerWikimedia = (project in file("kafka-producer-wikimedia")).settings(
+  commonSettings
+)
