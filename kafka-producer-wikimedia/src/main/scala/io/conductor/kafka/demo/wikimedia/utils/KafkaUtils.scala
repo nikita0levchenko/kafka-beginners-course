@@ -18,6 +18,20 @@ object KafkaUtils {
       ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
       new StringSerializer().getClass.getName
     )
+
+    // set high throughput producer configs
+    properties.put(
+      ProducerConfig.LINGER_MS_CONFIG,
+      "20"
+    )
+    properties.put(
+      ProducerConfig.BATCH_SIZE_CONFIG,
+      (32 * 1024).toString
+    )
+    properties.put(
+      ProducerConfig.COMPRESSION_TYPE_CONFIG,
+      "snappy"
+    )
     properties
   }
 
