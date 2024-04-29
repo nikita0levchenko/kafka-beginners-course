@@ -2,7 +2,6 @@ package io.conductor.kafka.demo.wikimedia
 
 import com.launchdarkly.eventsource.EventHandler
 import com.launchdarkly.eventsource.EventSource
-import io.conductor.kafka.demo.wikimedia.utils.KafkaUtils
 import org.apache.kafka.clients.producer.KafkaProducer
 
 import java.net.URI
